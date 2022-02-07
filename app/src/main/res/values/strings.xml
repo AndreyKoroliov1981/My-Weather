@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Weather</string>
+    <string name="title_search">Search</string>
+    <string name="title_city">City</string>
+    <string name="title_details">Details</string>
+    <string name="errorDbCitys">City database error</string>
+    <string name="errorViewedDbCitys">Viewed city database error</string>
+    <string name="textDetailsAbout">Информация о погоде в</string>
+    <string name="currentTemperatureText">Температура сейчас, °C:</string>
+    <string name="windSpeedText">Скорость ветра, м/с:</string>
+    <string name="hourTemperatureText">Температура через 1 час, °C:</string>
+    <string name="sixHourTemperatureText">Температура через 6 часов, °C:</string>
+    <string name="twelveHourTemperatureText">Температура через 12 часов, °C:</string>
+    <string name="twentyFourHourTemperatureText">Температура через 24 часа, °C:</string>
+    <string name="DBViewedCityEmpty">Database viewed city empty</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.korol.myweather.ui.search.SearchFragment"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_city"
+        android:name="com.korol.myweather.ui.city.CityFragment"
+        tools:layout="@layout/fragment_city" >
+        <action
+            android:id="@+id/action_navigation_city_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.korol.myweather.ui.details.DetailsFragment"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="selectedCity"
+            app:argType="com.korol.myweather.repository.ListItem" />
+    </fragment>
+</navigation>
